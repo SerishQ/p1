@@ -1,0 +1,73 @@
+                                         E
+   Deyisenler, girdiyimiz deyerleri alan ve ya programin çalismasi ile  bezi deyerlerin teyin edildiyi melumat tutucularidir. Deyiseni tesvir etmek ise daxil edilen ve ya programin getireceyi verilenin ne olduguna bagli olaraq deyisen növünün müeyyen edilmesidir. Meselen daxil edilen melumat bir tam eded olarsa  o zaman deyiseni de  tam eded olaraq tesvir etmek lazimdir. Müxtelif növler üçün bu emeliyyat ferqli sekilde tekrarlanmalidir.
+Deyiseni tesvir ederken diqqet edilmeli olan veziyyetler
+?	 Bir deyerleri olmalidir ve ya mütleq sekilde null olarak tesvir edilmelidir.
+?	 Böyük-kiçik herf ayrimi var.
+?	 Deyisen adlari reqemle baslaya bilmez.
+?	 Class, namespace ve kontrol adlari kimi program terefinden istifade edilen adlar verile bilmez.
+?	Eyni kod bloqu içinde eyni addan birden çox deyisen tesvir edile bilmez.
+?	 Xüsusi xarakter qebul etmez. meselen  /,*,-,+.
+?	 Bosluq istifade edile bilmez.
+?	 Xüsusi sözler istifade edile bilmez (if, else, random,  vs.)
+
+
+                                  Deyisen növleri
+
+Ededi növler 
+  1) byte- 0-dan 255e kimi olan ededleri tesvir etmek üçün istifade olunur ve yaddasda 1 byte yer tutur.
+  2)int- tam ededleri tesvir etmek üçün istifade olunur ve yaddasda 4 bayt yer tutur.
+  3) float- kesr ededleri ve ya sürüsken vergüllü ededleri tesvir etmek üçün istifade olunur ve bu deyisen növü de yaddasda 4 bayt yer tutur.
+ 4) double- Daha böyük kesr ededleri tesvir ederken istifade olunur ve yaddasda 8 bayt yer tutur.
+Metn növleri
+1) char-Tek bir xarakteri tutur.Hecmi 2 baytdir. Meselen char x=`b`
+2) string- Metn tutur. meselen string a=`Yuxusuzam amma tapsiriq edirem`
+Ele deyisen növleri var ki ne metn ne de ededi növe aiddir.
+ 1)Bool-Sert olduqda istifade olunur. Bool növüne aid deyerlere true, false kimi ifadeler nümune ola biler.
+2) Datetime- zaman ve tarix tesvir edildikde istifade olunur ve yaddasda 8 bayt yer tutur.
+ 
+
+                    Riyazi operatorlar
+  Proqramlasdirmada riyazi hesablamalari aparmaq üçün riyazi operatorlardan istifade olunur.Riyazi operatorlar asagidakilardir :
+1) `+` operatoru- Toplama emeliyyatini heyata keçirir.
+2) `-` operatoru- Çixma emeliyyatini heyata keçirir.
+3) `*` operatoru- Vurma emeliyyatini heyata keçirir.
+4) `/` operatoru- Bölme emeliyyatini heyata keçirir.
+5) `%` operatoru- Bölmeden alinan qaligi tapir.
+
+
+                        Mentiqi operatorlar
+Operator	Simvol	Istifadesi	Emeliyyat neticesi
+Mentiqi AND	&&	 a && b	a ve b’nin her ikisi sifirdan ferqli ise netice 1 eks halda 0
+Mentiqi OR	||	a || b	a ve ya b’den biri sifirdan ferqli isee netice 1 eks halda 0
+Mentiqi INKAR	!	!a	a sifir olarsa netice 1 eks halda 0
+
+
+
+  AND/OR/INKAR operatoruna aid nümune
+int x=5;
+int y=4;
+Console.Writeline (5==6-1 && 7>6)
+Console.Writeline (5>=4 // 7<6)
+
+Console.Writeline (5!=4 && 7-1==6)
+
+Console.Writeline (!(5==4) // 7>6)
+
+Netice
+True
+True
+True
+True
+
+
+                                 Sert operatorlari
+== : `Beraberdir` demekdir.Meselen a == b demek, a ile b’nin bir-birine beraber olmasi menasina gelir.
+!= : `Beraber deyil` menasina gelir. Meselen a != b demek, a ile b’nin bir birine beraber olmamasi demekdir.
+> : `Böyükdür` demekdir. Meselen  a > b demek, a deyeri b deyerinden böyükdür 
+< : `Kiçiktir` demekdir. Meselen a < b demek, a deyeri b deyerinden kiçikdir.
+ >= : `Böyük beraberdir`demekdir. Meselen a >= b demek, a deyeri b deyerinden böyük ve ya beraberdir.
+ <= : `Kiçik beraberdir` demekdir. Meselen a < =b demek, a deyeri b deyerinden kiçik ve ya beraberdir.
+
+
+
+
