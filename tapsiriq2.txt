@@ -1,0 +1,73 @@
+                                         D?yis?n n?dir? 
+   D?yis?nl?r, girdiyimiz d?y?rl?ri alan v? ya programin çalismasi il?  b?zi d?y?rl?rin t?yin edildiyi m?lumat tutucularidir. D?yis?ni t?svir etm?k is? daxil edil?n ve ya programin g?tir?c?yi veril?nin n? olduguna bagli olaraq d?yis?n növünün mü?yy?n edilm?sidir. M?s?l?n daxil edil?n m?lumat bir tam ?d?d olarsa  o zaman d?yis?ni d?  tam ?d?d olaraq t?svir etm?k lazimdir. Müxt?lif növl?r üçün bu ?m?liyyat f?rqli s?kild? t?krarlanmalidir.
+D?yis?ni t?svir ed?rk?n diqq?t edilm?li olan v?ziyy?tl?r
+?	 Bir d?y?rl?ri olmalidir v? ya mütl?q s?kild? null olarak t?svir edilm?lidir.
+?	 Böyük-kiçik h?rf ayrimi var.
+?	 D?yis?n adlari r?q?ml? baslaya bilm?z.
+?	 Class, namespace v? kontrol adlari kimi program t?r?find?n istifad? edil?n adlar veril? bilm?z.
+?	Eyni kod bloqu içind? eyni addan bird?n çox d?yis?n t?svir edil? bilm?z.
+?	 Xüsusi xarakter q?bul etm?z. m?s?l?n  /,*,-,+.
+?	 Bosluq istifad? edil? bilm?z.
+?	 Xüsusi sözl?r istifad? edil? bilm?z (if, else, random,  vs.)
+
+
+                                  D?yis?n növl?ri
+
+?d?di növl?r 
+  1) byte- 0-dan 255? kimi olan ?d?dl?ri t?svir etm?k üçün istifad? olunur v? yaddasda 1 byte yer tutur.
+  2)int- tam ?d?dl?ri t?svir etm?k üçün istifad? olunur v? yaddasda 4 bayt yer tutur.
+  3) float- k?sr ?d?dl?ri v? ya sürüsk?n vergüllü ?d?dl?ri t?svir etm?k üçün istifad? olunur v? bu d?yis?n növü d? yaddasda 4 bayt yer tutur.
+ 4) double- Daha böyük k?sr ?d?dl?ri t?svir ed?rk?n istifad? olunur v? yaddasda 8 bayt yer tutur.
+M?tn növl?ri
+1) char-T?k bir xarakteri tutur.H?cmi 2 baytdir. M?s?l?n char x=`b`
+2) string- M?tn tutur. m?s?l?n string a=`Yuxusuzam amma tapsiriq edir?m`
+El? d?yis?n növl?ri var ki n? m?tn n? d? ?d?di növ? aiddir.
+ 1)Bool-S?rt olduqda istifad? olunur. Bool növün? aid d?y?rl?r? true, false kimi ifad?l?r nümun? ola bil?r.
+2) Datetime- zaman v? tarix t?svir edildikd? istifad? olunur v? yaddasda 8 bayt yer tutur.
+ 
+
+                    Riyazi operatorlar
+  Proqramlasdirmada riyazi hesablamalari aparmaq üçün riyazi operatorlardan istifad? olunur.Riyazi operatorlar asagidakilardir :
+1) `+` operatoru- Toplama ?m?liyyatini h?yata keçirir.
+2) `-` operatoru- Çixma ?m?liyyatini h?yata keçirir.
+3) `*` operatoru- Vurma ?m?liyyatini h?yata keçirir.
+4) `/` operatoru- Bölm? ?m?liyyatini h?yata keçirir.
+5) `%` operatoru- Bölm?d?n alinan qaligi tapir.
+
+
+                        M?ntiqi operatorlar
+Operator	Simvol	Istifad?si	?m?liyyat n?tic?si
+M?ntiqi AND	&&	 a && b	a v? b’nin h?r ikisi sifirdan f?rqli is? n?tic? 1 ?ks halda 0
+M?ntiqi OR	||	a || b	a v? ya b’d?n biri sifirdan f?rqli ise? n?tic? 1 ?ks halda 0
+M?ntiqi INKAR	!	!a	a sifir olarsa n?tic? 1 ?ks halda 0
+
+
+
+  AND/OR/INKAR operatoruna aid nümun?
+int x=5;
+int y=4;
+Console.Writeline (5==6-1 && 7>6)
+Console.Writeline (5>=4 // 7<6)
+
+Console.Writeline (5!=4 && 7-1==6)
+
+Console.Writeline (!(5==4) // 7>6)
+
+N?tic?
+True
+True
+True
+True
+
+
+                                 S?rt operatorlari
+== : `B?rab?rdir` dem?kdir.M?s?l?n a == b dem?k, a ile b’nin bir-birin? b?rab?r olmasi m?nasina g?lir.
+!= : `B?rab?r deyil` m?nasina g?lir. M?s?l?n a != b dem?k, a ile b’nin bir birin? b?rab?r olmamasi dem?kdir.
+> : `Böyükdür` dem?kdir. M?s?l?n  a > b dem?k, a d?y?ri b d?y?rind?n böyükdür 
+< : `Kiçiktir` dem?kdir. M?s?l?n a < b dem?k, a d?y?ri b d?y?rind?n kiçikdir.
+ >= : `Böyük b?rab?rdir`dem?kdir. M?s?l?n a >= b dem?k, a d?y?ri b d?y?rind?n böyük v? ya b?rab?rdir.
+ <= : `Kiçik b?rab?rdir` dem?kdir. M?s?l?n a < =b dem?k, a d?y?ri b d?y?rind?n kiçik v? ya b?rab?rdir.
+
+
+
+
