@@ -1,0 +1,16 @@
+            Client side ve Server side diller arasindaki esas ferqler
+
+    Web proqramlasdirmaya basladigimizda esas bilmemiz lazim olan onun calisma mentiqidir
+Web saytlar ucun bilmemiz lazim olan 3 anlayis var.
+1)Client-Istifade etdiyimiz komputerler (biz)
+2)Server: (Saytlarimizi yerlesdirdiyimiz komputerler-7/24 aciq)
+3)Web sayt
+Bizim istifadeci olaraq gorduyumuz muddetde :
+   Web browseri açib adres setrine adresi  yazdiqdan sonra enter’a basiriq. Web sayt ekranimizda gorunur. Amma bunun isleme mentiqi necedir?
+Evvelce bilmemiz lazim olan odur ki, web browserler sadece html (javascript, Jquery) dilini basa duse bilirler. Insanlarin elaqe  qurmasi ucun nece diller yarandisa,komputer proqramlari arasinda da  benzer bir elaqe sekli movcuddur ve web browserler HTML-den basqa dil bilmezler.
+  Onda buradaki proqramlasdirma mentiqi necedir?
+Client, girmek istediyi web seyfesini adres setirine yazaraq serverden bir istek teleb edir. Server gelen isteyi alir, istek hansi dilde kodlanmis ona baxar ve ona gore cavab verir. Basqa sozle istenen web saytini gonderir.
+Burada client'den gelen istek eger HTML esasli ise (meselen anaseyfe.html) server, web browserin sadece bu dilden anladigini bildiyi ucun, gelen isteyi saxladigi web saytini eynen cliente  gönderir. (anaseyfe.html) Buna client side proqramlasdirma deyilir.
+ Eger gelen istek HTML esasli olmazsa?
+  Clientden Servere gelen istek .aspx ve ya .php olabiler.  Server gelen isteye baxar. Gelen istek - meselen anaseyfe.aspx- ise clientdeki browserin aspx bilmediyini ve eynen gönderse bunu basa dusub istifadeciye göstere bilmeyeceyini bilir ve bir tercumeci  kimi kodlari ishe salir ve web browserin basa dusduyu dil olan html’e cevirerek cliente gönderir.  Buna ise Server Side proqramlasdirma deyirik.
+ Qisacasi bu iki programlasdirma arasindaki ferq, Client side programlasdirmada kodlar bizim komputerler terefinden oxunur ve netice bize gosterilir.Server Side programlasdirmada kodlar server uzerinde oxunub bize gönderilir.
